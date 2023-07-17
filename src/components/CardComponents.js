@@ -3,7 +3,7 @@ import Card from "./card.js";
 
 const CardComponents = () => {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-3 gap-4 ">
       <Card
         imgSrc="https://static.nike.com/a/images/c_limit,w_800,f_auto/t_product_v1/wohf5k8sjdmgogckoczk/air-jordan-1-mid-shoes-D8g1Qq.png"
         name="Air Jordan 1 Low"

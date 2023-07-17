@@ -48,7 +48,6 @@
   }
   
   .nav-mid {
-    background-color: aqua;
     height: 70vh;
     text-align: center;
     display: flex;
@@ -56,6 +55,7 @@
     justify-content: center;
     font-size: 32px;
   }
+  
   
   ul {
     list-style: none;
