@@ -1,14 +1,17 @@
-import React from 'react';
+import React from "react";
 
 function Hero() {
-  
   return (
-    <div className='nav-mid'>
-      <h1 style={{ fontFamily: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif' }}>
-      Store. The best way to buy the products you love.
+    <div className="nav-mid">
+      <h1
+        style={{
+          fontFamily:
+            'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+        }}
+      >
+        Store. The best way to buy the products you love.
       </h1>
-   
-    </div>  
+    </div>
   );
 }
 

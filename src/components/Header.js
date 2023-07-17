@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Header = () => {
   let time = new Date();
@@ -10,16 +10,34 @@ const Header = () => {
   } else if (hours < 18) {
     mode = "dayMode";
   }
-  
+
   return (
     <header className={`display-flex ${mode}`}>
+         <div className="flex items-left">
+      <img src="https://images.pexels.com/photos/15222280/pexels-photo-15222280/free-photo-of-blurred-walking-person-on-white-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Logo" className="h-18 w-10" />
+    </div>
       <nav className="nav-container">
-      <img className="h-8 w-8" src="https://images.unsplash.com/photo-1689240766231-6d9b33f1a899?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Logo" />
         <ul className="nav display-flex">
-          <li><a href="https://chat.openai.com/?model=text-davinci-002-render-sha">Home</a></li>
-          <li><a href="https://chat.openai.com/?model=text-davinci-002-render-sha">About</a></li>
-          <li><a href="https://chat.openai.com/?model=text-davinci-002-render-sha">Contact</a></li>
-          <li><a href="https://chat.openai.com/?model=text-davinci-002-render-sha">Gallery</a></li>
+          <li>
+            <a href="https://chat.openai.com/?model=text-davinci-002-render-sha">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="https://chat.openai.com/?model=text-davinci-002-render-sha">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="https://chat.openai.com/?model=text-davinci-002-render-sha">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="https://chat.openai.com/?model=text-davinci-002-render-sha">
+              Gallery
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
