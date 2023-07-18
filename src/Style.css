@@ -44,7 +44,7 @@
   }
   
   header.nightMode {
-    background-color: bisque;
+    background-color: honeydew;
   }
   
   .nav-mid {
@@ -74,6 +74,7 @@
 .card {
 margin-left: 10px;
 margin-top: 5px;
+background-color: #e5e7eb;
 }
   .card-img {
     width: 200px;
@@ -82,6 +83,3 @@ margin-top: 5px;
     object-fit: cover;
     border-radius: 20px;
   }
- 
-  
- 
