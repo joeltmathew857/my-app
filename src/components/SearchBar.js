@@ -18,9 +18,9 @@ const ColorChange = () => {
   const resetColor = () => {
     setColor("green");
   };
-
   const generateRandomColor = () => {
-    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    const colors = ["blue", "green", "yellow", "red", "purple"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
     setColor(randomColor);
   };
 
@@ -38,17 +38,6 @@ const ColorChange = () => {
         return "";
     }
   };
-
-  useEffect(() => {
-    // Perform any side effects or subscriptions here
-    // This effect runs only once after the initial render
-
-    // Cleanup function (optional)
-    return () => {
-      // Perform cleanup here
-      // This function is called when the component is unmounted
-    };
-  }, []); // Empty dependency array means the effect runs only once
 
   return (
     <div>
