@@ -1,28 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const Clock = () => {
-  const [date, setDate] = useState(new Date());
+function ColorChange() {
+  const [color, setColor] = useState("blue"); // State for color
 
-  useEffect(() => {
-    const timerID = setInterval(() => {
-      tick();
-    }, 1000);
-
-    return () => {
-      clearInterval(timerID);
-    };
-  }, []);
-
-  const tick = () => {
-    setDate(new Date());
+  const changeColor = () => {
+    setColor("red"); // Change color to red
   };
 
   return (
     <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
+      <h1 style={{ color: color }}>Color Change Example</h1>
+      <button onClick={changeColor}>Change Color</button>
     </div>
   );
-};
+}
 
-export default Clock;
+export default ColorChange;
+
+
